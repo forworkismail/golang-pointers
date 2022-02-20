@@ -24,4 +24,12 @@ func main() {
 	// to change the value that a pointer is pointing to
 	*myAge = 33
 	fmt.Println(*myAge) // 33
+
+	doubledAge := double(myAge)
+	fmt.Println(doubledAge)
+	fmt.Println(age)
+}
+
+func double(number *int) int {
+	return *number * 2
 }
